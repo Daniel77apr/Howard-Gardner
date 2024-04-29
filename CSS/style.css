@@ -1,0 +1,338 @@
+:root {
+  /* COLORS */
+  --orange: #fba834;
+  --dark-blue: #183875;
+  --medium-blue: #387adf;
+  --light-blue: #50c4ed;
+  
+  --purple: #8c32f1;
+  --pink: #e436c7;
+  --red: #e03131;
+  --yellow: #ffe600;
+  --green: #3eca14;
+
+  --light-gray: #cbd4e4;
+}
+
+.pangolin-regular, h1, h2, h3, h4, .navbar, .lead {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* TEXT COLOR */
+
+.orange-text {
+  color: var(--orange);
+}
+
+.dark-blue-text {
+  color: var(--dark-blue);
+}
+
+.medium-blue-text {
+  color: var(--medium-blue);
+}
+
+.light-blue-text {
+  color: var(--light-blue);
+}
+
+.purple-text {
+  color: var(--purple);
+}
+
+.pink-text {
+  color: var(--pink);
+}
+
+.red-text {
+  color: var(--red);
+}
+
+.yellow-text {
+  color: var(--yellow);
+}
+
+.green-text {
+  color: var(--green);
+}
+
+/* BACKGROUND COLOR */
+
+.orange-bg {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+}
+
+.dark-blue-bg {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.medium-blue-bg {
+  background-color: var(--medium-blue);
+  color: white;
+}
+
+.light-blue-bg {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+.purple-bg {
+  background-color: var(--purple);
+  color: var(--dark-blue);
+}
+
+.pink-bg {
+  background-color: var(--pink);
+  color: white;
+}
+
+.red-bg {
+  background-color: var(--red);
+  color: white;
+}
+
+.yellow-bg {
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+}
+
+.green-bg {
+  background-color: var(--green);
+  color: white;
+}
+
+.light-gray-bg {
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+}
+
+.chalkboard-bg {
+  background-image: url(/Images/Backgrounds/grungy-green-chalkboard-background-mas02xb0oybagefx.jpg);
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.9)
+}
+
+.paper-bg {
+  background-image: url(/Images/Backgrounds/old-wrinkled-paper-sheet-background_125869-38-copy.jpg);
+  background-size: cover;
+  color: var(--dark-blue);
+}
+
+.texture-bg {
+  background-image: url(/Images/Backgrounds/texture-bg.svg);
+  background-size: cover;
+  color: white;
+}
+
+.dark-texture-bg {
+  background-image: url(/Images/Backgrounds/dark-texture-bg.svg);
+  background-size: cover;
+  color: white;
+}
+
+
+/* GENERAL */
+
+.flex {
+  display: flex;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+body {
+  padding-top: 56px;
+}
+
+/* Index */
+
+.hero-image {
+  height: 70vw;
+  background-image: url(/Images/Backgrounds/bright-stationery-blackboard.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 992px) {
+  .hero-image {
+    height: calc(100vh - 56px);
+  }
+}
+
+.navbar {
+  border-radius: 0;
+  background-color: var(--dark-blue);
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: var(--dark-blue);
+}
+
+.dropdown-menu {
+  background-color: var(--medium-blue);
+}
+
+.thumbnail {
+  width: 20%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Nosotros */
+
+.framed {
+  border: 50px solid;
+  border-image-source: url(/Images/Backgrounds/frame.svg);
+  border-image-slice: 180;
+}
+
+.title-drawing svg {
+  height: 4rem;
+}
+
+.title-drawing svg:nth-of-type(1) {
+  transform: rotate(30deg);
+}
+
+.pie-chart {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-evenly;
+    background-image: url(/Images/Backgrounds/pie-chart.svg);
+    background-size: cover;
+}
+
+.break {
+    width: 100%;
+}
+
+.pie-chart div:not(.break) {
+    height: 15%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie-chart div:nth-child(1), .pie-chart div:nth-child(4) {
+    position: relative;
+    top: 30%;
+}
+
+.pie-chart div:nth-child(2), .pie-chart div:nth-child(3) {
+    position: relative;
+    top: 10%;
+}
+
+.pie-chart div:nth-child(6), .pie-chart div:nth-child(9) {
+    align-self: flex-end;
+    position: relative;
+    bottom: 30%;
+}
+
+.pie-chart div:nth-child(7), .pie-chart div:nth-child(8) {
+    align-self: flex-end;
+    position: relative;
+    bottom: 10%;
+}
+
+.pie-chart div:nth-child(2), .pie-chart div:nth-child(7) {
+  right: 3%;
+}
+
+.pie-chart div:nth-child(3), .pie-chart div:nth-child(8) {
+  left: 3%;
+}
+
+.pie-chart img {
+  width: 60px;
+  transition: width 0.5s;
+}
+
+.pie-chart img:hover {
+  width: 70px;
+}
+
+.orange-popover {
+  --bs-popover-header-bg: var(--orange);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--orange);
+}
+
+.medium-blue-popover {
+  --bs-popover-header-bg: var(--medium-blue);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--medium-blue);
+}
+
+.pink-popover {
+  --bs-popover-header-bg: var(--pink);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--pink);
+}
+
+.yellow-popover {
+  --bs-popover-header-bg: var(--yellow);
+  --bs-popover-header-color: var(--dark-blue);
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--yellow);
+}
+
+.green-popover {
+  --bs-popover-header-bg: var(--green);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--green);
+}
+
+.purple-popover {
+  --bs-popover-header-bg: var(--purple);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-bluet);
+  --bs-popover-border-color: var(--purple);
+}
+
+.light-blue-popover {
+  --bs-popover-header-bg: var(--light-blue);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--light-blue);
+}
+
+.red-popover {
+  --bs-popover-header-bg: var(--red);
+  --bs-popover-header-color: white;
+  --bs-popover-body-color: var(--dark-blue);
+  --bs-popover-border-color: var(--red);
+}
+
+
+
+.popover-header {
+
+}
+.popover-body {
+
+}
+
+/* BOTTOM */
+
+.social-media-link {
+  font-size: 2rem;
+  text-decoration: none;
+}
