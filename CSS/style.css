@@ -118,19 +118,19 @@
 }
 
 .paper-bg {
-  background-image: url(/Images/Backgrounds/old-wrinkled-paper-sheet-background_125869-38-copy.jpg);
+  background-image: url(../Images/Backgrounds/old-wrinkled-paper-sheet-background_125869-38-copy.jpg);
   background-size: cover;
   color: var(--dark-blue);
 }
 
 .texture-bg {
-  background-image: url(/Images/Backgrounds/texture-bg.svg);
+  background-image: url(../Images/Backgrounds/texture-bg.svg);
   background-size: cover;
   color: white;
 }
 
 .dark-texture-bg {
-  background-image: url(/Images/Backgrounds/dark-texture-bg.svg);
+  background-image: url(../Images/Backgrounds/dark-texture-bg.svg);
   background-size: cover;
   color: white;
 }
@@ -154,7 +154,7 @@ body {
 
 .hero-image {
   height: 70vw;
-  background-image: url(/Images/Backgrounds/bright-stationery-blackboard.jpg);
+  background-image: url(../Images/Backgrounds/bright-stationery-blackboard.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -188,7 +188,7 @@ body {
 
 .framed {
   border: 50px solid;
-  border-image-source: url(/Images/Backgrounds/frame.svg);
+  border-image-source: url(../Images/Backgrounds/frame.svg);
   border-image-slice: 180;
 }
 
@@ -210,7 +210,7 @@ body {
     flex-wrap: wrap;
     align-items: top;
     justify-content: space-evenly;
-    background-image: url(/Images/Backgrounds/pie-chart.svg);
+    background-image: url(../Images/Backgrounds/pie-chart.svg);
     background-size: cover;
 }
 
