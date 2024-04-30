@@ -14,12 +14,17 @@
   --light-gray: #cbd4e4;
 }
 
+/* FONT */
+
 .pangolin-regular, h1, h2, h3, h4, .navbar, .lead {
   font-family: "Pangolin", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* TEXT COLOR */
 
@@ -114,7 +119,7 @@
 .chalkboard-bg {
   background-image: url(../Images/Backgrounds/grungy-green-chalkboard-background-mas02xb0oybagefx.jpg);
   background-size: cover;
-  color: rgba(255, 255, 255, 0.9)
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .paper-bg {
@@ -142,12 +147,33 @@
   display: flex;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .justify-space-evenly {
   justify-content: space-evenly;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 body {
   padding-top: 56px;
+}
+
+.navbar {
+  background-color: var(--dark-blue);
+}
+
+.dropdown-item:hover {
+  background-color: var(--dark-blue);
+}
+
+.dropdown-menu {
+  background-color: var(--medium-blue);
 }
 
 /* Index */
@@ -159,32 +185,40 @@ body {
   background-position: center;
 }
 
-.navbar {
-  border-radius: 0;
-  background-color: var(--dark-blue);
-  border: none;
-}
-
-.dropdown-item:hover {
-  background-color: var(--dark-blue);
-}
-
-.dropdown-menu {
-  background-color: var(--medium-blue);
+.responsive-title {
+  font-size: 25px;
 }
 
 .thumbnail-container div {
   width: 20%;
+  height: 30vw;
+}
+
+.thumbnail-container div:hover {
+  width: 21%;
+}
+
+.thumbnail-container div:hover .thumbnail {
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+  opacity: 100%;
+  filter: contrast(100%) blur(0);
+}
+
+.thumbnail-container a {
+  color: inherit;
+}
+
+.thumbnail-container h4 {
+  font-size: 16px;
 }
 
 .thumbnail {
   width: 100%;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  opacity: 50%;
+  filter: contrast(250%) blur(0.5px);
+  transition: 1s;
 }
 
-.responsive-title {
-  font-size: 25px;
-}
 
 /* NOSOTROS */
 
@@ -341,9 +375,13 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .responsive-title {
     font-size: 35px;
+  }
+
+  .thumbnail-container h4 {
+    font-size: 24px;
   }
 }
 
