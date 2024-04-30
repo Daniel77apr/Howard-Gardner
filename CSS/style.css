@@ -173,8 +173,12 @@ body {
   background-color: var(--medium-blue);
 }
 
-.thumbnail {
+.thumbnail-container div {
   width: 20%;
+}
+
+.thumbnail {
+  width: 100%;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -182,7 +186,7 @@ body {
   font-size: 25px;
 }
 
-/* Nosotros */
+/* NOSOTROS */
 
 .framed {
   border: 50px solid;
@@ -353,4 +357,58 @@ body {
   .hero-image {
     height: calc(100vh - 56px);
   }
+}
+
+/* ANIMATIONS */
+
+.animate {
+  transition: 0.7s;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.show-animate .fade-in {
+  opacity: 100%;
+}
+
+.fade-in-to-right {
+  transform: translateX(-10%);
+  opacity: 0;
+}
+
+.show-animate .fade-in-to-right {
+  transform: translateX(0);
+  opacity: 100%;
+}
+
+.fade-in-to-left {
+  transform: translateX(10%);
+  opacity: 0;
+}
+
+.show-animate .fade-in-to-left {
+  transform: translateX(0);
+  opacity: 100%;
+}
+
+.fade-in-to-up {
+  transform: translateY(20%);
+  opacity: 0;
+}
+
+.show-animate .fade-in-to-up {
+  transform: translateX(0);
+  opacity: 100%;
+}
+
+.fade-in-to-down {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+
+.show-animate .fade-in-to-down {
+  transform: translateX(0);
+  opacity: 100%;
 }
