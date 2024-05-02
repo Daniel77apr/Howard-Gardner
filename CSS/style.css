@@ -176,10 +176,16 @@ body {
   background-color: var(--medium-blue);
 }
 
+section {
+  overflow: hidden;
+}
+
 /* Index */
 
 .hero-image {
-  height: 70vw;
+  
+  height: min(calc(100vh - 56px), 70vw);
+  min-height: calc(60vh - 56px);
   background-image: url(../Images/Backgrounds/bright-stationery-blackboard.jpg);
   background-size: cover;
   background-position: center;
@@ -201,7 +207,7 @@ body {
 .thumbnail-container div:hover .thumbnail {
   box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
   opacity: 100%;
-  filter: contrast(100%) blur(0);
+  filter: contrast(100%);
 }
 
 .thumbnail-container a {
@@ -215,7 +221,7 @@ body {
 .thumbnail {
   width: 100%;
   opacity: 50%;
-  filter: contrast(250%) blur(0.5px);
+  filter: contrast(250%);
   transition: 1s;
 }
 
@@ -375,6 +381,8 @@ body {
   text-decoration: none;
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 450px) {
   .responsive-title {
     font-size: 35px;
@@ -388,12 +396,6 @@ body {
 @media (min-width: 600px) {
   .responsive-title {
     font-size: 53px;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero-image {
-    height: calc(100vh - 56px);
   }
 }
 
